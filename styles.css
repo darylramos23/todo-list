@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+/*
+Color Pallette
+#00dae3 #64fcc9 #b6ffed #e3ff3f #f8b62d
+*/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;  
+  font-size: 16px;
+  font-family: 'Yusei Magic',sans-serif;    
+  display: flex; 
+  align-items: center; /*para macenter yung main, kaialangan nakaset yung height nung body*/  
+  justify-content: center;
+}
+li{
+  font-size: 1.1em;
+  margin-left:1.6em;
+  list-style-type: square;
+
+}
+main{
+   margin: auto auto;/* another way para macenter. Dapat naka flex, grid yung parent */ 
+}
+
+.todo-list-box{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding:10px 20px;
+  height: 80vh;
+  width: 300px;
+  background-color: #b6ffed;
+  box-shadow: 5px 5px 10px 1px rgba(77, 77, 77, 0.205);
+}
+.todo-list-box .title{
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  background-color: #00dae3;
+}
+.todo-list-box .input-text{
+  text-align: center;
+  caret-color: green;
+  height: 3em;
+  background-color: #b6ffed;
+  font-size: 1em;
+}
+.todo-list-box .button-color{
+  background-color: #f8b62d;
+}
+.enter-button{
+  font-family: inherit;
+  background-color:  #e3ff3f;
+  height: 2.3em;
+}
+/*list properties*/
+.list-container{
+  height: 60vh;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.list-container::-webkit-scrollbar{ /*hide the scrollbar but retain functionality*/
+  display: none;
+}
+.delete-color{
+  background-color:#f8b62d;
+}
+.space{
+  margin-left: 6.5em;
+}
+.li-width{
+  display: inline-block;
+  width: 10em;
+  overflow-wrap: normal;
+}
+.strikethrough{
+  text-decoration: line-through;
+}
+
