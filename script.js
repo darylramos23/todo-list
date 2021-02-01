@@ -1,5 +1,8 @@
 'use strict'
 
+
+var _ = require('lodash');
+
 const inputText = document.querySelector('.input-text');
 const enterButton = document.querySelector('.enter-button');
 const unorderedList = document.getElementById('item-list');
